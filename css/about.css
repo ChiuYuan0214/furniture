@@ -1,0 +1,59 @@
+
+/* About Page */
+
+#about-intro {
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-intro h1 {
+    margin-bottom: 40px;
+    font-size: 3rem;
+    font-weight: 700;
+    color: rgb(36, 34, 34);
+}
+
+#about-intro p {
+    width: 80%;
+    font-size: 1.2rem;
+    line-height: 1.7;
+    color: rgb(36, 34, 34);
+}
+
+article {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 10px;
+}
+
+article:last-child {
+    margin-bottom: 80px;
+}
+
+.picture {
+    flex: 1 200px;
+    width: 100%;
+    max-width: 400px;
+    object-fit: cover;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.article {
+    flex: 2 400px;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+
+@media screen and (min-width: 600px) {
+    img[src*=about2] {
+        order: 1;
+    }
+}
